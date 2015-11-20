@@ -1,0 +1,12 @@
+<template name="mdlUiUpload">
+    <div id="{{id}}" class="mdl-ui-upload mdl-card {{cell}} {{class}} {{classState}}" style="{{styleState}}">
+        <input type="file" style="display:none">
+        <input type="hidden" name={{name}} value={{value}}>
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__menu">
+            <button type="button" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                <i class="material-icons">{{iconState}}</i>
+            </button>
+        </div>
+    </div>
+</template>
