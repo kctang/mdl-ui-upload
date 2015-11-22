@@ -3,10 +3,9 @@ Template.mdlUiUpload.events({
     var iconName = $(event.currentTarget).first('i').text().trim();
     switch (iconName) {
       case 'delete':
-        // TODO: mark item for deletion?
         var name = MdlUi.Util2.resolveName(this);
         var form = MdlUi.Util2.resolveData(this, 'form');
-        form.setValue(name, '');
+        form.value(name, null, '');
         break;
       case 'file_upload':
         view.$('input[type=file]').click();
@@ -29,9 +28,8 @@ Template.mdlUiUpload.events({
       if (error) {
         throw new Meteor.Error('Error uploading file [' + uploader.xhr.response + ']');
       } else {
-        console.info(downloadUrl);
         var name = MdlUi.Util2.resolveName(this.data);
-        this.form.setValue(name, downloadUrl);
+        this.form.value(name, null, downloadUrl);
       }
     }.bind({
       // let upload callback access self and form
