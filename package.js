@@ -1,6 +1,6 @@
 Package.describe({
   name: 'kctang:mdl-ui-upload',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'UI control to perform image upload with preview capability',
   git: 'https://github.com/kctang/mdl-ui-upload',
   documentation: 'README.md'
