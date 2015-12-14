@@ -6,6 +6,14 @@ It was built as a plugin to mdl-ui.
   
 # Usage
 
+## Google Developers Console Configuration
+
+* Setup an account & project
+* Create service account (p12)
+* Using openssl, generate pem file from p12
+* Create a storage bucket
+* Refer to [meteor-slingshot](https://github.com/CulturalMe/meteor-slingshot) to setup CORS on the bucket
+
 ## Get Google Cloud Storage (GCS) Keys
  
 Download private key files from GCS console and store them in your project's `private` directory. 
