@@ -45,6 +45,9 @@ Template.mdlUiUpload.helpers({
   'class': function () {
     return MdlUi.Util2.resolveClass(this);
   },
+  label: function () {
+    return MdlUi.Util2.resolveLabel(this);
+  },
   id: function () {
     return MdlUi.Util2.resolveId(this, 'mdl-ui-upload');
   },
