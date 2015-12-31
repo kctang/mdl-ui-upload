@@ -1,17 +1,17 @@
 Package.describe({
   name: 'kctang:mdl-ui-upload',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'UI control to perform image upload with preview capability',
   git: 'https://github.com/kctang/mdl-ui-upload',
   documentation: 'README.md'
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom('1.2.0.1');
+  api.versionsFrom('1.2.1');
   api.use([
     'ecmascript',
     'meteor-base',
-    'kctang:mdl-ui@0.0.6',
+    'kctang:mdl-ui@0.0.9',
     'edgee:slingshot@0.7.1'
   ]);
   api.use([
